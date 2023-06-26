@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+
+        }
+        .header{
+            height: 5rem;
+            margin: 0px 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        span h2{
+            color: #286d34;
+            cursor: pointer;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #333;
+            margin-left: 30px;
+        }
+        ul li a:hover{
+            color: #286d34;
+        }
+        .container{
+            margin: 20px 200px;
+            display: flex;
+
+        }
+        .right-box{
+            width: 50%;
+            border: 1px solid #286d34;
+            border-radius: 10px;
+        }
+        .main-image-box{
+            padding: 30px 0px;
+            width: 100%;
+            display:flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .main-image{
+            height: 390px;
+            width: auto;
+        }
+        .small-images{
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            align-items: center;
+        }
+        .image-box{
+            margin: 0px 8px 8px 0px;
+            height: 100px;
+            width: 100px;
+            cursor: pointer;
+            border: 1px solid #286d34;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .image{
+            height: 90%;
+            width: auto;
+
+        }
+        .details-box{
+            width: 50%;
+            padding-left: 50px; 
+        }
+        .details-box h2{
+            color: #286d34;
+        }
+        .inputs{
+            width: 100%;
+            justify-content: space-between;
+
+        }
+        td input{
+            height: 30px;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            background-color: #286d34;
+            color: white;
+            margin-top: 14px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span><h2>SparklesAvenue</h2></span>
+        <ul>
+            <li><a href="/home/juliet/Documents/Degree-2022/2.2/E-commerce/eco-V2/WEBSITE2/addtocart.html">Home</a></li>
+            <li><a href="/home/juliet/Documents/Degree-2022/2.2/E-commerce/eco-V2/WEBSITE2/checkout.html">CheckOut</a></li>
+           
+        </ul>
+    </div>
+    <div class="container">
+        <div class="right-box">
+            <div class="main-image-box">
+                <img src="img/ANKLET1.webp" id="mainImage" class="main-image">
+            </div>
+            <div class="small-images">
+                <div class="image-box"><img src="img/anklet4.jpg" class="image"></div>
+                <div class="image-box"><img src="img/anklet1.webp" class="image"></div>
+                <div class="image-box"><img src="img/anklet2.jpg" class="image"></div>
+                <div class="image-box"><img src="img/anklet3.webp" class="image"></div>
+            </div>
+        </div>
+        <div class="details-box">
+            <h1>Here is the Single Product Name and  Information</h1>
+            <p>Availability (In Stock)</p>
+            <h2>Ksh.5.00</h2>
+            <table cellspacing="0" class="inputs">
+                <tr>
+                    <td>Quantity</td>
+                    <td align="right"><input type="number" id="first"></td>
+                </tr>
+                <tr>
+                    <td>Sub Total</td>
+                    <td align="right"><input type="number" id="second"></td>
+
+                </tr>
+                <tr>
+                    <td>Tax 15%</td>
+                    <td align="right"><input type="number" id="third"></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td align="right"><input type="number" id="fourth"></td>
+                </tr>
+                <h4>Specifications</h4>
+               
+            </table>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Vel sint quibusdam sed est itaque distinctio 
+                error quo eaque obcaecati beatae temporibus 
+                optio soluta qui inventore, laudantium velit animi cumque nulla!</p>
+
+                <button>Checkout</button>
+          
+
+
+        </div>
+    </div>
+
+    <!--scripts-->
+    <script>
+        let mainImage = document.getElementById("mainImage");
+        let smallImage = document.getElementsByClassName("image");
+        smallImage[0].onclick = ()=>{
+            mainImage.src = smallImage[0].src;
+
+        }
+        smallImage[1].onclick = ()=>{
+            mainImage.src = smallImage[1].src;
+
+        }
+        smallImage[2].onclick = ()=>{
+            mainImage.src = smallImage[2].src;
+
+        }
+        smallImage[3].onclick = ()=>{
+            mainImage.src = smallImage[3].src;
+
+        }
+     
+        function cart(){
+            var a,b,c,d;
+            a = document.getElementById("first").value;
+            b = a*5;
+            document.getElementById("second").value=b;
+            c = (b*15)/100;
+            document.getElementById("third").value=c;
+            d = b+c;
+            document.getElementById("fourth").value=d;
+        }
+        let ans = document.getElementById("first");
+        ans.addEventListener('keyup',cart);
+    </script>
+</body>
+</html>

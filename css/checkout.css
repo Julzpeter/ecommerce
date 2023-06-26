@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    height: 6rem;
+    border-bottom: 1px solid #ccc;
+}
+.header p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #18bdfe;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+li a{
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+}
+li a:hover{
+    color: #18bdfe;
+}
+.container{
+    display: flex;
+    margin: 3rem 150px;
+}
+.cart{
+    width: 65%;
+    background-color: #f2f2f2;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 30px 0;
+}
+table{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.table-head{
+    color: white;
+    background-color: #18bdfe;
+}
+.head-img{
+    text-align: left;
+    padding-left: 7px;
+}
+.summary{
+    background-color: #f2f2f2;
+    width: 35%;
+    margin-left: 20px;
+}
+.detail{
+    margin: 10px 0;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #18bdfe;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    padding: 7px;
+}
+button{
+    border: none;
+    background-color: red;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.checkout{
+    width: 100%;
+    background-color: #18bdfe;
+}
+button:hover, .checkout:hover{
+    background-color: #333;
+}
+.img-box{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border:  1px solid #18bdfe;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash{
+    color: #18bdfe;
+}
+.fa-trash:hover{
+    color: #333;
+}
+@import '~mdb-ui-kit/css/mdb.min.css';
+body{
+    display: block;
+    background-color:#fff ;
+}
+.form{
+    width: 100%;
+    padding: 20px 10vw;
+
+}
+.heading{
+    text-transform: capitalize;
+    font-size: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input:not(.search-box, .checkbox,.size-checkbox, input[type="file"]),
+.form input{
+    background: #f5f5f5 !important;
+    width:100% !important;
+}
+.three-input-container{
+    display: flex;
+    justify-content: space-between;
+}
+.three-input-container input{
+    margin: 0 !important;
+
+}
+#state{
+    margin: 0 20px !important;
+}
+.checkout-btn, .place-order-btn{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    background: #383838;
+    color: #fff;
+}

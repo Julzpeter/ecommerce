@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/checkout.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <p>SparkleAvenue</p>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                
+            </ul>
+        </div>
+        <div class="container">
+            <div class="cart">
+                <div class="top">
+                    <h2>Shopping Cart</h2>
+                    <h2 id="itemA">4 Items</h2>
+                </div>
+                <table cellspacing="0" class="table-head">
+                    <tr>
+                        <th width="150" class="head-img">Image</th>
+                        <th width="360">Name</th>
+                        <th width="150">Price</th>
+                        <th width="70">Delete</th>
+                    </tr>
+                </table>
+                <table id="root" cellspacing="0"></table>
+                <hr>
+            </div>
+
+            <div class="summary">
+                <div class="top">
+                    <h2>Order Summary</h2>
+                </div>
+                <div class="detail">
+                    <h2 id="itemB">4 Items</h2>
+                    <h2 id="totalA">$ 600.00</h2>
+                </div>
+                <div style="margin-top: 30px; padding: 0 30px;">
+                    <h2>Shipping</h2>
+                    <input type="text" placeholder="Standard deilivery">
+                    
+                </div>
+                <hr>
+                <div class="top">
+                    <h2>Total</h2>
+                    <h2 id="totalB">$ 600.00</h2>
+                </div>
+                <div style="padding: 0 10px; margin-bottom: 20px;">
+                    <button class="place-order-btn">Place order</button>
+                   
+                </div>
+            </div>
+        </div>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
